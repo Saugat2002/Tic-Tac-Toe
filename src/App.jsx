@@ -44,14 +44,16 @@ const Game = () => {
         <>
             <div className="flex h-screen space-x-20">
                 <div className="game flex justify-center items-start space-x-10">
-                    <div className="game-board">
+                    <div className="game-board flex flex-col space-y-5 items-center ">
                         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+                        <div className="text-slate-200"> Currently at Move {currentMove+1}</div>
                     </div>
                     <div className="game-info">
                         <ol>
                             {moves}
                         </ol>
                     </div>
+
                 </div>
                 <div className="reset my-auto">
                     <button className="border-black border-2 p-2 px-3 bg-gray-400 rounded-lg" onClick={reset}>Reset</button>
