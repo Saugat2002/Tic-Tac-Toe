@@ -1,0 +1,13 @@
+@tailwind base;
+
+body {
+  @apply m-5 p-0 bg-gray-600 flex justify-center items-center text-xl;
+  font-family: sans-serif;
+}
+
+.square {
+  @apply bg-blue-200 border float-left text-4xl font-[bold] h-[60px] text-center w-[60px] border-solid border-[#999];
+}
+
+@tailwind components;
+@tailwind utilities;
