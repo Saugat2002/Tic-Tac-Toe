@@ -46,7 +46,7 @@ const Game = () => {
                 <div className="game flex justify-center items-start space-x-10">
                     <div className="game-board flex flex-col space-y-5 items-center ">
                         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-                        <div className="text-slate-200"> Currently at Move {currentMove+1}</div>
+                        <div className="text-slate-200"> Currently at Move {currentMove}</div>
                     </div>
                     <div className="game-info">
                         <ol>
